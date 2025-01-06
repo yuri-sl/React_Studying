@@ -1,16 +1,17 @@
-"use client";
-import HelloWorldReact from "./_components/HelloWorldReact";
-import HelloWorld from "./_components/HelloWorld";
-import styles from "~/styles/homepage.module.css";
+import styles from "../styles/homepage.module.css";
+import Navbar from "./_components/navbar";
+import SpellCard from "./_components/infoCard"
 
-export  default function HomePage() {
-
-  return (
-    <main className={styles.main}>
-      <HelloWorld />
-      <h3>This is a third level header</h3>
-      <HelloWorldReact />
-
-    </main>
-  )
+export default function SpellsPage(){
+    return(
+        <main>
+            <Navbar/>
+            <SpellCard 
+            SpName  ="FireBall"
+            SpSchool ="Destruction"
+            SpCost = "150"
+            SpDesc = "Fires an intense ball of fire that explodes"
+            />
+        </main>
+    )
 }
