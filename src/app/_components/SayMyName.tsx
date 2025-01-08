@@ -1,5 +1,3 @@
-
-
 export default function SayMyName(props){
     return (
         <div>

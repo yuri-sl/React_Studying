@@ -1,17 +1,13 @@
-import styles from "../styles/homepage.module.css";
-import Navbar from "./_components/navbar";
-import SpellCard from "./_components/infoCard"
+"use client"
+import Event from "./_components/evento";
+import Form from "./_components/Form";
 
-export default function SpellsPage(){
-    return(
-        <main>
-            <Navbar/>
-            <SpellCard 
-            SpName  ="FireBall"
-            SpSchool ="Destruction"
-            SpCost = "150"
-            SpDesc = "Fires an intense ball of fire that explodes"
-            />
-        </main>
+export default function homePage(){
+    return (
+        <>
+        <Event numero="1"/>
+        <Event numero="2"/>
+        <Form />
+        </>
     )
 }
